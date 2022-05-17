@@ -7,7 +7,12 @@ function App(): JSX.Element {
     <>
       <div className="App">
         <GlobalStyle></GlobalStyle>
-        <PomodoroTimer defaultPomodoroTimer={10} />
+        <PomodoroTimer
+          defaultPomodoroTimer={20}
+          shortResttime={300}
+          longRestTime={900}
+          cycles={4}
+        />
       </div>
     </>
   );
