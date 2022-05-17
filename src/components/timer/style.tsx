@@ -4,7 +4,7 @@ export const Tm = styled.div`
   font-size: 5rem;
   font-family: 'Gruppo', cursive;
   font-weight: bold;
-  color: #919191;
+  color: #d5d5d5;
 `;
 export const ContainerTm = styled.div`
   background: #333b44;

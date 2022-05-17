@@ -36,7 +36,7 @@ transition: background-color 300ms ease-in-out;
     transition: 0.5s;
     background-size: 200% auto;
     color: #000000;
-    box-shadow: 0 0 20px #2b323a;
+    box-shadow: 0 0 20px #010101;
     border-radius: 10px;
     display: block;
     border: none;
@@ -61,5 +61,8 @@ box-shadow:  20px 20px 60px #c83a32,
     background: #eb443b;
 border-radius: 100%;
 box-shadow: inset 9.91px 9.91px 15px #76221E, inset -9.91px -9.91px 15px #FF6659;
+  }
+  .hidden{
+    display: none;
   }
 `;
