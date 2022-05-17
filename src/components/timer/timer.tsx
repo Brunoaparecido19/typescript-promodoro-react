@@ -17,14 +17,17 @@ export function Timer(props: Props): JSX.Element {
     const working = document.querySelector('.btn-work') as HTMLElement;
     working.addEventListener('click', () => {
       setOnAnimation(true);
+      document.body.classList.add('working');
     });
-  }, [onAnimation]);
 
-  useEffect(() => {
-    const pause = document.querySelector('.btn-pause') as HTMLElement;
-    pause.addEventListener('click', () => {
-      setOnAnimation(false);
-    });
+    setTimeout(() => {
+      const pause = document.querySelector('.btn-pause') as HTMLElement;
+      if (pause) {
+        pause.addEventListener('click', () => {
+          setOnAnimation(!onAnimation);
+        });
+      }
+    }, 200);
   }, [onAnimation]);
 
   useInterval(() => {
@@ -38,9 +41,9 @@ export function Timer(props: Props): JSX.Element {
           isPlaying={onAnimation}
           size={400}
           duration={timeDuration}
-          colors={['#404040', '#F7B801', '#ff0000', '#A30000']}
+          colors={['#040404', '#393939', '#ff0000', '#A30000']}
           colorsTime={[10, 6, 3, 0]}
-          strokeWidth={5}
+          strokeWidth={8}
         >
           {({ remainingTime }) => <Tm>{secondsToTime(props.mainTime)}</Tm>}
         </CountdownCircleTimer>
