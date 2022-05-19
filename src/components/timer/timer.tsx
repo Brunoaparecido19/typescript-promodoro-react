@@ -46,7 +46,7 @@ export function Timer(props: Props): JSX.Element {
       <ContainerTm className="div-timer">
         <CountdownCircleTimer
           isPlaying={onAnimation}
-          size={400}
+          size={200}
           duration={timeDuration}
           colors={['#040404', '#2a2a2a', '#ff0000', '#A30000']}
           colorsTime={[10, 6, 3, 0]}
