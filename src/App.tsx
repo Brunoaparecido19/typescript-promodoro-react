@@ -8,8 +8,8 @@ function App(): JSX.Element {
       <div className="App">
         <GlobalStyle></GlobalStyle>
         <PomodoroTimer
-          defaultPomodoroTimer={200}
-          shortResttime={300}
+          defaultPomodoroTimer={1500}
+          shortRestime={300}
           longRestTime={900}
           cycles={4}
         />
